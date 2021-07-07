@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 
-months = ['january', 'february', 'march', 'april', 'may', 'june']
+MONTHES = ['january', 'february', 'march', 'april', 'may', 'june']
 
 days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
@@ -36,7 +36,7 @@ def get_filters():
     while True:
         month = input('Would you like to filter the data by month, ? Type "month name like march" or "all" \n')
         month = month.lower()
-        if month in months or month == 'all':
+        if month in MONTHES or month == 'all':
             break
         else:
             print('That\'s not a valid month')
@@ -81,7 +81,7 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        month = months.index(month) + 1
+        month = MONTHES.index(month) + 1
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
