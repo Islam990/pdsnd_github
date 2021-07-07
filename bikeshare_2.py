@@ -210,7 +210,7 @@ def main():
     while True:  # continue untill user type any else yes
         city, month, day = get_filters()
         print('Loading data...')
-        df = load_data(city, month, day)
+        df = load_data(city, month, day) # dataFrame imported from Pandas library
 
         time_stats(df)
         station_stats(df)
