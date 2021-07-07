@@ -15,5 +15,7 @@ new_york_city.csv
 washington.csv
 
 ### Credits
+stackeoverflow solution used to get the most frequent combination of 
+start station and end station trip by using idxmax() method 
 https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
 
