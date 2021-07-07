@@ -207,7 +207,7 @@ def display_five_row_of_data(df):
 
 
 def main():
-    while True:
+    while True:  # continue untill user type any else yes
         city, month, day = get_filters()
         print('Loading data...')
         df = load_data(city, month, day)
